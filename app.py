@@ -6,10 +6,14 @@ app = Flask(__name__)
 CORS(app) 
 
 
+# Adiciona sua host (127.0.0.1 é o padrão)
 app.config['MYSQL_HOST'] = '127.0.0.1'
+# Adicione o seu nome do mysql
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'KauaYcaro1703'
-app.config['MYSQL_DB'] = 'tccsj'
+# Adicione a senha do seu mysql
+app.config['MYSQL_PASSWORD'] = 'senha'
+# Adicione o seu banco de dados
+app.config['MYSQL_DB'] = 'bd123'
 
 mysql = MySQL(app)
 
